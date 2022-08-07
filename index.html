@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="topnav">
+            <a class="active" href="#home">Logo</a>
+            <a href="#" class="split">Menu</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="left-content">
+            <form action="#">
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Select your design</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="design_select" onchange="designSelectOnchage()" name="design_select">
+                            <option>----select----</option>
+                            <option value="design_one">Design One</option>
+                            <option value="design_two">Design Two</option>
+                            <option value="design_three">Design Three</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="first_name_bride">First name of bride</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="first_name_bride" onkeyup="firstNameBride(this.value)"
+                            name="first_name_bride" placeholder="First name of bride">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">First name of groome</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="first_name_groome" onkeyup="firstNameGroome(this.value)"
+                            name="first_name_groome" placeholder="First name of groome">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="message" name="message" onkeyup="getMessageValue(this.value)"
+                            placeholder="Message" style="height:150px"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="date">Date</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="date" name="date" onkeyup="getDateInput(this.value)" placeholder="Date">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="venu_address">Venu Address</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="venu_address" name="venu_address" placeholder="Venu Address"
+                            style="height:100px"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <input type="reset" value="Reset">
+                </div>
+
+            </form>
+        </div>
+        <div style="width: 8px;"></div>
+        <div class="right-content" id="right_content_id" style="background: url(image/wedding-bg1.jpg); display: none;">
+            <div class="card">
+                <div class="card-body">
+                    <div class="display_design" style="color: red;">
+                        <p id="display_design"></p>
+                    </div>
+                    <div class="display_first_name_bride">
+                        <label for="first_name_bride">First name of bride:</label>
+                        <p id="display_first_name_bride"></p>
+                    </div>
+                    <div class="display_first_name_groome">
+                        <label for="lname">First name of groome:</label>
+                        <p id="display_first_name_groome"></p>
+                    </div>
+                    <div class="display_message">
+                        <label for="message">Message:</label>
+                        <p id="display_message"></p>
+                    </div>
+                    <div class="display_date">
+                        <label for="date">Date:</label>
+                        <p id="display_date"></p>
+                    </div>
+                    <div class="display_venu_address">
+                        <label for="venu_address">Venu Address:</label>
+                        <p id="display_venu_address"></p>
+                    </div>
+                    <div>
+                        <br> <br> <br>
+                        <div class="row">
+                            <input type="button" onclick="window.print()" value="Print">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        function designSelectOnchage() {
+            var x = document.getElementById("right_content_id");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function firstNameBride(first_name_bride_value) {
+            document.getElementById("display_first_name_bride").innerHTML = first_name_bride_value;
+        }
+
+        function firstNameGroome(display_first_name_groome) {
+            document.getElementById("display_first_name_groome").innerHTML = display_first_name_groome;
+        }
+
+        function getMessageValue(display_message) {
+            console.log("display_message :", display_message)
+            document.getElementById("display_message").innerHTML = display_message;
+        }
+
+        function getDateInput(date) {
+            document.getElementById("date").innerHTML = date;
+        }
+
+        function myFunction(first_name_bride_value) {
+            document.getElementById("display_design").innerHTML = first_name_bride_value;
+        }
+
+        function myFunction(display_venu_address) {
+            document.getElementById("display_venu_address").innerHTML = display_venu_address;
+        }
+
+    </script>
+</body>
+
+</html>
