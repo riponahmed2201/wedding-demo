@@ -78,7 +78,11 @@ input[type=submit]:hover {
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px;
+    /* padding: 20px; */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .col-25 {
@@ -112,11 +116,12 @@ input[type=submit]:hover {
 }
 
 .left-content{
-    width: 45%;
+    width: 47%;
     float: left;
 }
 
 .right-content{
-    width: 45%;
+    width: 47%;
     float: right;
+    margin-top: 0px;
 }
