@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wedding Invitation Designer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="py-2 bg-light border-bottom">
+        <div class="container d-flex flex-wrap">
+            <ul class="nav me-auto">
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link link-dark px-2 active"
+                        aria-current="page">Logo</a>
+                </li>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link link-dark px-2">Menu</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <br> <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-sm-12 border border-primary border-2 rounded-2 p-4">
+                <form class="row g-3">
+                    <div class="col-md-12">
+                        <label for="fname" class="form-label">Select your design:</label>
+                        <select class="form-select">
+                            <option>----select----</option>
+                            <option value="design_one">Design One</option>
+                            <option value="design_two">Design Two</option>
+                            <option value="design_three">Design Three</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="fname" class="form-label">First name of bride:</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="fname" class="form-label">First name of groome:</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="message" class="form-label">Message:</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="date" class="form-label">Date:</label>
+                        <input type="date" class="form-control">
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="venu_address" class="form-label">Venu Address:</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="button" class="btn btn-primary">Reset</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-6 offset-md-1 border border-primary border-2 rounded-2 p-4">
+
+                <div class="col-md-12">
+                    <div class="display_first_name_bride">
+                        <p style="text-align: center; color: #d23331; font-family: Brush Script MT, cursive; font-size: 26px; font-style: normal; font-variant: normal; font-weight: 700;"
+                            id="display_first_name_bride">First name</p>
+                    </div>
+
+                    <div
+                        style="margin-top: 15px; text-align: center; color: #d23331; font-family: Brush Script MT, cursive; font-size: 26px; font-style: normal; font-variant: normal; font-weight: 700;">
+                        <p id="showAnd">safasgsag</p>
+                    </div>
+
+                    <div class="display_first_name_groome">
+                        <p style="margin-top: 15px; word-break: break-all; text-align: center; color: #d23331; font-family: Brush Script MT, cursive; font-size: 26px; font-style: normal; font-variant: normal; font-weight: 700;"
+                            id="display_first_name_groome">asgasgsgh</p>
+                    </div>
+
+                    <div class="display_message">
+                        <p style="text-align: center; word-break: break-all; font-family: Brush Script MT, cursive; font-size: 22px; font-style: normal; font-variant: normal; font-weight: 700;"
+                            id="display_message">sagsdgsdh</p>
+                    </div>
+
+                    <div class="display_date"
+                        style="text-align: center; word-break: break-all; font-family: Brush Script MT, cursive; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700;">
+                        <p id="display_date">sgsgsdhsdh</p>
+                    </div>
+
+                    <br>
+                    <div class="display_venu_address"
+                        style="word-break: break-all; text-align: center; font-family: Brush Script MT, cursive; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700;">
+                        <p id="display_venu_address">sgsdhsdhdsh</p>
+                    </div>
+
+                </div>
+                <div class="col-12">
+                    <button type="button" class="btn btn-primary">Print</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br> <br>
+    <div class="container">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-4 mb-3">
+                    <h4>Logo</h4>
+                    <h6>Contact Information</h6>
+                </div>
+
+                <div class="col-6 col-md-4 mb-3">
+                    <h5>Menu</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="javascript:void(0)" class="nav-link p-0 text-muted">Home</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="javascript:void(0)"
+                                class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="javascript:void(0)" class="nav-link p-0 text-muted">FAQs</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="javascript:void(0)" class="nav-link p-0 text-muted">About</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-4 mb-3">
+                    <h5>Social Link</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="javascript:void(0)"
+                                class="nav-link p-0 text-muted">Facebook</a></li>
+                        <li class="nav-item mb-2"><a href="javascript:void(0)"
+                                class="nav-link p-0 text-muted">Instagram</a></li>
+                        <li class="nav-item mb-2"><a href="javascript:void(0)"
+                                class="nav-link p-0 text-muted">Twitter</a></li>
+                        <li class="nav-item mb-2"><a href="javascript:void(0)"
+                                class="nav-link p-0 text-muted">Linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-center py-4 my-4 border-top">
+                <p>&copy; 2022 Wedding Invitation Designer, Inc. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
